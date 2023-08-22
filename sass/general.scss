@@ -1,0 +1,26 @@
+@import "constants";
+@import "header";
+
+:root, a {
+    background-color: $backgroundColor;
+    text-decoration: none;
+    color: black;
+
+    h1 {
+        color: $titleColor;
+    }
+    h2 {
+        color: $secondTitleColor;
+    }
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/cafe-francoise.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauranten</title>
+    <link rel="shortcut icon" href="/images/logo.png" />
+    <link href="css/main.css" rel="stylesheet">
+    <script src="/js/restaurants.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/"><img src="/images/logo.png" alt="logo" id="logo"></a></li>
+                <li><a href="/restaurants">Restauranten</a></li>
+                <li><a href="/map">Map</a></li>
+            </ul>
+            <a href="/profile"><img src="/images/profile.png" alt="profile" id="profile"></a>
+        </nav>
+    </header>
+    <main id="restaurants-page">
+        <section class="filter">
+            <div class="search">
+                <div class="searchbar">
+                    <button id="search-button"><img src="/images/search.png" alt="search"></button>
+                    <input type="text" id="search" placeholder="Search">
+                </div>
+                <div class="filter-eatingoptions"></div>
+            </div>
+            <div class="filter-chilfriendliness"></div>
+        </section>
+        <section class="restaurants">           
+            <template id="restaurant-template">
+                <div class="restaurant">
+                    <div class="image-eatingoptions">
+                        <img class="restaurant-image" alt="restaurant">
+                    </div>
+                    <div class="restaurant-info">
+                        <div>
+                            <h2></h2>
+                            <div id="rating"></div>
+                            <p id="opening-hours"></p>
+                            <p id="address"></p>
+                            <ul id="eatingoptions"></ul>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
+</body>
+
+
+</html>

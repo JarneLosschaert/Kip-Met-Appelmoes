@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+header nav ul a {
+  font-size: 1.75rem;
+  color: #EA6A11;
+}
+header nav img {
+  height: 7rem;
+}
+header nav #profile {
+  height: 4rem;
+  filter: invert(48%) sepia(40%) saturate(1568%) hue-rotate(351deg) brightness(93%) contrast(97%);
+}
+
+:root, a {
+  background-color: #FFFAF7;
+  text-decoration: none;
+  color: black;
+}
+:root h1, a h1 {
+  color: #EA6A11;
+}
+:root h2, a h2 {
+  color: #F29558;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("/fonts/cafe-francoise.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "CustomFont", sans-serif;
+}
+
+#restaurants-page {
+  margin: 2rem 5rem;
+}
+#restaurants-page .filter .search .searchbar button {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+}
+#restaurants-page .filter .search .searchbar button img {
+  width: 1rem;
+}
+#restaurants-page .restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#restaurants-page .restaurants .restaurant {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(100deg, rgba(255, 250, 247, 0.2), rgba(234, 106, 17, 0.2));
+  flex-basis: 30rem;
+}
+#restaurants-page .restaurants .restaurant .image-eatingoptions .restaurant-image {
+  width: 18rem;
+  height: 16rem;
+  border-radius: 0.5rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info > div h2 {
+  font-size: 1.5rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info > div #rating {
+  display: flex;
+  gap: 0.5rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info > div #rating img {
+  width: 1.5rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info #eatingoptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info #eatingoptions li {
+  width: 3rem; /* Adjust this to your desired size */
+  height: 3rem; /* Adjust this to your desired size */
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Hides any content outside the circle */
+  /* Optional: Add a border for the circle */
+  background-color: rgba(234, 106, 17, 0.75);
+  box-sizing: border-box; /* Ensures the border is within the container dimensions */
+  display: flex;
+}
+#restaurants-page .restaurants .restaurant .restaurant-info #eatingoptions li img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover; /* Ensures the image covers the circular area */
+  margin: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

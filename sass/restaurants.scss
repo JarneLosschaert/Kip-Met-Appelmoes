@@ -1,0 +1,101 @@
+#restaurants-page {
+    margin: 2rem 5rem;
+
+    .filter {
+        .search {
+            .searchbar {
+                input {
+    
+                }
+                button {
+                    color: $secondTextColor;
+                    padding: 0.25rem 0.5rem;
+    
+                    img {
+                        width: 1rem;
+                    }
+                }
+                .filter-eatingoptions {
+    
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .restaurant {
+            display: flex;
+            padding: 1rem;
+            border-radius: $borderRadius;
+            background: linear-gradient(100deg, rgba($backgroundColor, 0.2), rgba($primaryColor, 0.2));
+            flex-basis: 30rem;
+
+            .image-eatingoptions {
+                .restaurant-image {
+                    width: 18rem;
+                    height: 16rem;
+                    border-radius: $borderRadius;
+                }
+                .eatingoptions {
+                    
+                }
+            }
+
+            .restaurant-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 1rem;
+
+                &>div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+    
+                    #rating {
+                        display: flex;
+                        gap: 0.5rem;
+    
+                        img {
+                            width: 1.5rem;
+                        }
+                    }
+                }
+                
+                #eatingoptions {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+
+                    li {
+                        width: 3rem; /* Adjust this to your desired size */
+                        height: 3rem; /* Adjust this to your desired size */
+                        border-radius: 50%; /* Makes the container circular */
+                        overflow: hidden; /* Hides any content outside the circle */
+                      
+                        /* Optional: Add a border for the circle */
+                        //border: 0.25rem solid rgba($primaryColor, 0.75); /* You can change the color and size */
+                        background-color: rgba($primaryColor, 0.75);
+                        box-sizing: border-box; /* Ensures the border is within the container dimensions */
+                        display: flex;
+                      }
+                      
+                      li img {
+                        width: 75%;
+                        height: 75%;
+                        object-fit: cover; /* Ensures the image covers the circular area */
+                        margin: auto;
+                      }
+                }
+            }
+        }
+    }
+}

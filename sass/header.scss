@@ -1,0 +1,29 @@
+@import "constants";
+
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+
+            a {
+                font-size: 1.75rem;
+                color: $titleColor;
+            }
+        }
+        img {
+            height: 7rem;
+        }
+        #profile {
+            height: 4rem;
+            filter: invert(48%) sepia(40%) saturate(1568%) hue-rotate(351deg) brightness(93%) contrast(97%);
+        }
+    }
+}
